@@ -16,7 +16,7 @@ for entry in bib_database.entries:
     entries[id] = entry
 
 # convert dictionary to yaml and write to file
-with open('books.yml', 'w') as f:
+with open('conversions/books.yml', 'w') as f:
     output_str = yaml.dump(entries, encoding='utf-8', allow_unicode=True)
     output_str = output_str.decode('utf-8').replace('\nisbn_', '\n\n\nisbn_')
     f.write(output_str)

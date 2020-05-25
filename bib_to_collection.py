@@ -17,5 +17,5 @@ for entry in bib_database.entries:
     # create frontmatter with metadata
     post = frontmatter.Post('', **entry)
     # write as collection file
-    with open('books/' + id + '.md', 'wb') as f:
+    with open('conversions/books/' + id + '.md', 'wb') as f:
         frontmatter.dump(post, f)

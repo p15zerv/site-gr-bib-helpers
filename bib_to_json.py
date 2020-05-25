@@ -16,7 +16,7 @@ for entry in bib_database.entries:
     entries[id] = entry
 
 # convert dictionary to yaml and write to file
-with open('references.json', 'w') as f:
+with open('conversions/references.json', 'w') as f:
     output_str = json.dumps(entries, ensure_ascii=False, sort_keys=True,
                             indent=4, separators=(',', ': '))
     f.write(output_str)
