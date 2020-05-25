@@ -1,7 +1,8 @@
 # site-gr-bib-helpers
 Helper for ioniodi/site-gr that provides alternatives to bibtex format for bibliography.
+This repository contains three python3 scripts that convert a `.bib` file to different formats. This `.bib` file contains data about books for university courses, which have been scraped from [Eudoxus](https://eudoxus.gr/). 
 
-This repository contains three python3 scripts that convert a `.bib` file to different formats. This `.bib` file contains data about books recommended by university course, which have been scraped from [Eudoxus](https://eudoxus.gr/). All converters require the `references.bib` file to be present in the same directory. Any `.bib` with a similar format should be compatible. The converters output corresponding files into the `conversions/` folder.
+All converters require the `references.bib` file to be present in the same directory. Any `.bib` with a similar format should be compatible. The converters output corresponding files into the `conversions/` folder.
 
 Make sure to install all of the listed requirements by running:
 ```
